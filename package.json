@@ -1,0 +1,69 @@
+{
+  "name": "whatsapp-email-assistant",
+  "version": "1.0.0",
+  "description": "AI Email Assistant via WhatsApp",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["whatsapp", "email", "ai", "assistant"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "mongoose": "^8.0.0",
+    "twilio": "^4.19.0",
+    "googleapis": "^128.0.0",
+    "dotenv": "^16.3.1",
+    "node-cron": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+```
+
+4. Scroll down, click **"Commit changes"**
+5. Click **"Commit changes"** again in popup
+
+---
+
+#### **File 2: .gitignore**
+
+1. Click **"Add file"** → **"Create new file"**
+2. Name: `.gitignore`
+3. Paste:
+```
+node_modules/
+.env
+*.log
+.DS_Store
+```
+
+4. Commit changes
+
+---
+
+#### **File 3: .env.example**
+
+1. Create new file: `.env.example`
+2. Paste:
+```
+# Twilio Configuration
+TWILIO_ACCOUNT_SID=your_twilio_account_sid
+TWILIO_AUTH_TOKEN=your_twilio_auth_token
+TWILIO_WHATSAPP_FROM=whatsapp:+14155238886
+
+# MongoDB
+MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/
+
+# HuggingFace AI
+HF_API_KEY=your_huggingface_api_key
+
+# Google OAuth
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+
+# Server
+PORT=3000
