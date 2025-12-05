@@ -7,7 +7,7 @@
     "start": "node index.js"
   },
   "keywords": ["whatsapp", "email", "ai", "assistant"],
-  "author": "Your Name",
+  "author": "Ridwan",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
@@ -22,48 +22,3 @@
     "node": ">=18.0.0"
   }
 }
-```
-
-4. Scroll down, click **"Commit changes"**
-5. Click **"Commit changes"** again in popup
-
----
-
-#### **File 2: .gitignore**
-
-1. Click **"Add file"** → **"Create new file"**
-2. Name: `.gitignore`
-3. Paste:
-```
-node_modules/
-.env
-*.log
-.DS_Store
-```
-
-4. Commit changes
-
----
-
-#### **File 3: .env.example**
-
-1. Create new file: `.env.example`
-2. Paste:
-```
-# Twilio Configuration
-TWILIO_ACCOUNT_SID=your_twilio_account_sid
-TWILIO_AUTH_TOKEN=your_twilio_auth_token
-TWILIO_WHATSAPP_FROM=whatsapp:+14155238886
-
-# MongoDB
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/
-
-# HuggingFace AI
-HF_API_KEY=your_huggingface_api_key
-
-# Google OAuth
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-
-# Server
-PORT=3000
